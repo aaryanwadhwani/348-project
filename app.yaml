@@ -1,0 +1,9 @@
+runtime: nodejs18
+env: standard
+
+handlers:
+  - url: /static
+    static_dir: client/build/static
+
+  - url: /.*
+    script: auto
