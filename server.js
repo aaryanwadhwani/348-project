@@ -15,7 +15,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://aaryandwadhwani:qmqAzqlwslSkFTli@cluster0.au7ky.mongodb.net/inventory?retryWrites=true&w=majority', {
+mongoose.connect(<YOUR_MongoDB_URI_HERE>, {
   // Options are no longer necessary in newer driver versions; you can remove them to avoid deprecation warnings.
 })
   .then(() => console.log("MongoDB connected"))
